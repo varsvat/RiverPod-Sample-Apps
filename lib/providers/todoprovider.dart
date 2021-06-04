@@ -1,4 +1,4 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpodapps/main.dart';
 import 'package:riverpodapps/models/todo.dart';
 
@@ -21,7 +21,7 @@ class TodoList extends StateNotifier<List<Todo>> {
         if (todo.id == id)
           Todo(
             id: todo.id,
-            ticked: !todo.ticked,
+            completed: !todo.completed,
             description: todo.description,
           )
         else
@@ -35,7 +35,7 @@ class TodoList extends StateNotifier<List<Todo>> {
         if (todo.id == id)
           Todo(
             id: todo.id,
-            ticked: todo.ticked,
+            completed: todo.completed,
             description: description,
           )
         else

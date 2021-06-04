@@ -1,11 +1,12 @@
 class Todo {
-  Todo({required this.description, required this.id, this.ticked = false});
+  Todo({required this.description, required this.id, this.completed = false});
 
   final String description;
   final String id;
-  final bool ticked;
+  final bool completed;
 
-  void printTodoObj() {
-    print('desc: $description\n id: $id\n ticked: $ticked');
+   @override
+  String toString() {
+    return 'Todo(description: $description, completed: $completed)';
   }
 }

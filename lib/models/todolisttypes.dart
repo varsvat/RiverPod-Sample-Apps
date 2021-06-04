@@ -1,5 +1,5 @@
-enum TodoTypes {
-  COMPLETED, 
-  ALL, 
-  ACTIVE
+enum TodoListFilter {
+  all,
+  active,
+  completed,
 }
