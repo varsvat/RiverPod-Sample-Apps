@@ -1,6 +1,6 @@
-# riverpod
+# CounterAppWithRiverpod
 
-A new Flutter project.
+A basic Counter App implemented with riverpod.
 
 ## Getting Started
 
