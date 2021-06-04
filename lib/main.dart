@@ -14,8 +14,12 @@ class MyApp extends ConsumerWidget {
     final String value = watch(riverpodStringProvider);
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(title: Text('Example')),
+        appBar: AppBar(
+          title: Text('RiverPod Example by @VarSVat'),
+          centerTitle: true,
+        ),
         body: Center(
           child: Text(value),
         ),
